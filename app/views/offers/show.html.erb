@@ -1,10 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<%= render @offer %>
+  <%= render @offer %>
 
-<div>
-  <%= link_to "Edit this offer", edit_offer_path(@offer) %> |
-  <%= link_to "Back to offers", offers_path %>
+  <div>
+    <%= link_to "Modifica", edit_offer_path(@offer), class: 'btn btn-warning w-100' %>
 
-  <%= button_to "Destroy this offer", @offer, method: :delete %>
+    <%= button_to "Elimina questa offerta", @offer, method: :delete, class: 'btn btn-danger w-100' %>
+
+    <br>
+    <%= link_to "Torna all'elenco delle offerte", offers_path %>
+  </div>
 </div>

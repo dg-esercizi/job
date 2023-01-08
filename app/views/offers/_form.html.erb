@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :rif, style: "display: block" %>
-    <%= form.number_field :rif %>
+  <div class="mb-3">
+    <%= form.label :rif, class: 'form-label' %>
+    <%= form.number_field :rif, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :titolo, class: 'form-label' %>
+    <%= form.text_field :titolo, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :descrizione, class: 'form-label' %>
+    <%= form.text_field :descrizione, class: 'form-control' %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :luogo, class: 'form-label' %>
+    <%= form.text_field :luogo, class: 'form-control' %>
   </div>
 
   <div>
-    <%= form.label :titolo, style: "display: block" %>
-    <%= form.text_field :titolo %>
-  </div>
-
-  <div>
-    <%= form.label :descrizione, style: "display: block" %>
-    <%= form.text_field :descrizione %>
-  </div>
-
-  <div>
-    <%= form.label :luogo, style: "display: block" %>
-    <%= form.text_field :luogo %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit 'Salva', class: 'btn btn-primary w-100' %>
   </div>
 <% end %>

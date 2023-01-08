@@ -1,10 +1,13 @@
-<h1>Editing offer</h1>
+<div class="container">
+  <h1>Modifica dell'offerta</h1>
 
-<%= render "form", offer: @offer %>
+  <%= render "form", offer: @offer %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Show this offer", @offer %> |
-  <%= link_to "Back to offers", offers_path %>
+  <div>
+    <%= link_to "Visualizza l'offerta", @offer, class: 'btn btn-secondary w-100' %>
+    <br>
+    <%= link_to "Torna all'elenco delle offerte", offers_path %>
+  </div>
 </div>
