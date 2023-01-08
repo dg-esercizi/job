@@ -3,12 +3,14 @@
 
   <h1>Offerte di lavoro</h1>
 
-  <div id="offers">
+  <div id="offers" class="row">
     <% @offers.each do |offer| %>
-      <%= render offer %>
-      <p>
-        <%= link_to "Dettagli", offer, class: 'btn btn-primary w-100' %>
-      </p>
+      <div class="col-4">
+        <%= render offer %>
+        <p>
+          <%= link_to "Dettagli", offer, class: 'btn btn-primary w-100' %>
+        </p>
+      </div>
     <% end %>
   </div>
 
