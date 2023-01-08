@@ -31,6 +31,11 @@
     <%= form.text_field :luogo, class: 'form-control' %>
   </div>
 
+  <div class="mb-3">
+    <%= form.label :foto, class: 'form-label' %>
+    <%= form.file_field :foto, class: 'form-control' %>
+  </div>
+
   <div>
     <%= form.submit 'Salva', class: 'btn btn-primary w-100' %>
   </div>
